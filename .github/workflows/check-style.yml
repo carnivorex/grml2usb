@@ -8,7 +8,8 @@ jobs:
       - name: Install make
         run: sudo apt install make python3 python3-pip -y
       - name: Install flake8 isort and black
-        run: pip3 install --user isort flake8 black
+        run: sudo apt install python3-flake8 -y 
+        run: pip3 install --user isort black
       - name: Run style checks on this repo
         run: make codecheck 
 
