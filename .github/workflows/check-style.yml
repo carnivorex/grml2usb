@@ -1,0 +1,3 @@
+name: Python style check
+uses: bulv1ne/python-style-check@v0.3
+
