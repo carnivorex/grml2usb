@@ -4,5 +4,6 @@ jobs:
   check-style:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: bulv1ne/python-style-check@v0.3
 
