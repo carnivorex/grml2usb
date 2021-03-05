@@ -39,9 +39,9 @@ clean:
 	rm -rf html-stamp man-stamp grml2usb.tar.gz grml2usb.tgz grml2usb.tgz.md5.asc
 
 codecheck:
-	python3 -m flake8 grml2usb
-	python3 -m isort --check-only grml2usb
-	python3 -m black --check grml2usb
+	flake8 grml2usb
+	isort --check-only grml2usb
+	black --check grml2usb
 
 # graph:
 #	sudo pycallgraph grml2usb /grml/isos/grml-small_2008.11.iso /dev/sdb1
