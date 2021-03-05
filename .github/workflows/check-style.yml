@@ -2,5 +2,6 @@ name: python-style-check
 on: [push]
 jobs:
   check-style:
-    uses: bulv1ne/python-style-check@v0.3
+    steps:
+      - uses: bulv1ne/python-style-check@v0.3
 
