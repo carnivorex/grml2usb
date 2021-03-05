@@ -1,3 +1,6 @@
-name: Python style check
-uses: bulv1ne/python-style-check@v0.3
+name: python-style-check
+on: [push]
+jobs:
+  check-style:
+    uses: bulv1ne/python-style-check@v0.3
 
