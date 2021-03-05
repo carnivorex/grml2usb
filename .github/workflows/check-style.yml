@@ -2,6 +2,7 @@ name: python-style-check
 on: [push]
 jobs:
   check-style:
+    runs-on: ubuntu-latest
     steps:
       - uses: bulv1ne/python-style-check@v0.3
 
