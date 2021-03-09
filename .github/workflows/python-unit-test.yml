@@ -1,6 +1,14 @@
-name: python-unit-test
+name: python-check-full
 on: [push]
 jobs:
+  check-style:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install make, flake8, black and isort
+        run: sudo apt install make flake8 isort black -y
+      - name: Run style checks on this repo
+        run: make codecheck 
   run-unit-tests:
     runs-on: ubuntu-latest
     steps:
