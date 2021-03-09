@@ -8,5 +8,5 @@ jobs:
       - name: Install pytest
         run: sudo apt install python3 python3-pytest 
       - name: Run Pytest
-        run: pytest
+        run: python3 -m pytest
 
